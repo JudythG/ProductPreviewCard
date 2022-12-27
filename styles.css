@@ -1,0 +1,66 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; 
+*/
+
+/* div {
+    height: 50px;
+    padding: 25%;
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    padding-top: 25%;
+    padding-bottom: 25%;
+    width: 45%;
+    height: auto;
+}
+
+img {
+    border-radius: 25px;
+    width: 50%;
+  }
+
+.item-type {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: hsl(228, 12%, 48%);
+}
+
+.label {
+    font-family: 'Fraunces', serif; 
+    font-weight: 700;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+.price {
+    font-family: 'Fraunces', serif; 
+    font-weight: 700;
+}
+
+.struck-price {
+    text-decoration: line-through;
+}
+
+span {
+    margin: 0 10px;
+}
+
+span:first-of-type {
+    margin-left: 0;
+}
+
+span:last-of-type {
+    margin-right: 0;
+}
