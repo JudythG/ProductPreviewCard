@@ -2,20 +2,107 @@ body {
     margin: 0;
 }
 
+.container {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 {
+    display: flex;
+}
+
+.item-details {
+    background-color: hsl(0, 0%, 100%);
+}
+
+img {
+    border-top-left-radius: 10px;
+}
+
+.item-type {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+.label {
+    font-family: 'Fraunces', serif; 
+    font-weight: 700;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 18pt;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-family: 'Fraunces', serif; 
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-size: x-large;
+}
+
+.struck-price {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: small;
+}
+
+span {
+    margin: 0 10px;
+}
+
+span:first-of-type {
+    margin-left: 0;
+}
+
+span:last-of-type {
+    margin-right: 0;
+}
+
+button {
+    font-family: 'Fraunces', serif; 
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);
+    color:hsl(30, 38%, 92%);
+    width: 95%;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cart-image {
+    width: 20px;
+    height: 20px;
+}
+
+.attribution {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 10px; 
+}
+
 /* mobile */
 @media only screen and (max-width: 375px) {
-    .container {
-        background-color: hsl(30, 38%, 92%);
-        display: flex;
-        /* height:100vh;      */
-        align-items: center;
-        justify-content: center;
-    }
 
     .container1 {
         width: 90%;
-        /* height: 90%; */
-        display: flex;
         flex-direction: column;
         margin-top: 25px;
         margin-bottom: 25px;
@@ -30,200 +117,55 @@ body {
     }
 
     img {
-        border-top-left-radius: 10px;
         border-top-right-radius: 10px 10px;
         height: 33%;
-        /* width: 100%; */
       }
 
-    .item-type {
-        font-family: 'Montserrat', sans-serif;
-        /* font-weight: 500; */
-        color: hsl(228, 12%, 48%);
-    }
 
     .label {
-        font-family: 'Fraunces', serif; 
-        font-weight: 700;
         font-size: x-large;
     }
 
     .description {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        color: hsl(228, 12%, 48%);
-    }
-
-    .prices {
-        display: flex;
-        align-items: center;
-    }
-    
-    .price {
-        font-family: 'Fraunces', serif; 
-        font-weight: 700;
-        color: hsl(158, 36%, 37%);
-        font-size: x-large;
-    }
-    
-    .struck-price {
-        text-decoration: line-through;
-        color: hsl(228, 12%, 48%);
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        font-size: small;
-    }
-    
-    span {
-        margin: 0 10px;
-    }
-    
-    span:first-of-type {
-        margin-left: 0;
-    }
-    
-    span:last-of-type {
-        margin-right: 0;
-    }
-
-    button {
-        font-family: 'Fraunces', serif; 
-        font-weight: 700;
-        background-color: hsl(158, 36%, 37%);
-        color:hsl(30, 38%, 92%);
-        width: 95%;
-        height: 40px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-    
-    .cart-image {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .attribution {
-        position: absolute;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        bottom: 10px; 
+        /* JTG not medium not small */
+        font-size: medium;
     }
 }
 
 /* laptop */
 @media only screen and (min-width: 375px) {
     .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: hsl(30, 38%, 92%);
         height:100vh;
     }
     
     .container1 {
         width: 40%;
-        display: flex;
     }
     
     .item-details {
         width: 50%;
         padding: 10px 30px 10px 30px;
-        background-color: hsl(0, 0%, 100%);
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px 10px;
     }
     
     img {
-        border-top-left-radius: 10px;
         border-bottom-left-radius: 10px 10px;
         width: 50%;
       }
     
     .item-type {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        color: hsl(228, 12%, 48%);
         font-size: small;
         letter-spacing: 4px;
     }
     
     .label {
-        font-family: 'Fraunces', serif; 
-        font-weight: 700;
         font-size: xx-large;
         margin: 16px 0;
         line-height: 26pt;
     }
     
     .description {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        color: hsl(228, 12%, 48%);
-        line-height: 18pt;
         font-size: small;
     }
-    
-    .prices {
-        display: flex;
-        align-items: center;
-    }
-    
-    .price {
-        font-family: 'Fraunces', serif; 
-        font-weight: 700;
-        color: hsl(158, 36%, 37%);
-        font-size: x-large;
-    }
-    
-    .struck-price {
-        text-decoration: line-through;
-        color: hsl(228, 12%, 48%);
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        font-size: small;
-    }
-    
-    span {
-        margin: 0 10px;
-    }
-    
-    span:first-of-type {
-        margin-left: 0;
-    }
-    
-    span:last-of-type {
-        margin-right: 0;
-    }
-    
-    button {
-        font-family: 'Fraunces', serif; 
-        font-weight: 700;
-        background-color: hsl(158, 36%, 37%);
-        color:hsl(30, 38%, 92%);
-        width: 95%;
-        height: 40px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-    
-    .cart-image {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .attribution {
-        position: absolute;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        bottom: 10px; 
-    }
-    
 }
